@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CÔNG TY TNHH TJB | Du lịch & Thực phẩm</title>
+    <meta
+      name="description"
+      content="CÔNG TY TNHH TJB: dịch vụ du lịch và thực phẩm. Tour trải nghiệm, đặt dịch vụ nhanh, sản phẩm đặc sản chọn lọc, giao hàng toàn quốc."
+    />
+    <meta name="theme-color" content="#0f172a" />
+
+    <meta property="og:title" content="CÔNG TY TNHH TJB | Du lịch & Thực phẩm" />
+    <meta
+      property="og:description"
+      content="Dịch vụ du lịch và thực phẩm: tour theo mùa, đặt dịch vụ nhanh, đặc sản chọn lọc, giao hàng toàn quốc."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Optional: Tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              soft: "0 10px 30px rgba(0,0,0,0.08)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-slate-900">
+    <!-- Top bar -->
+    <div class="bg-slate-900 text-slate-100">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-2 text-sm">
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+          <span class="inline-flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            <span>Giờ làm việc: 08:30–17:30 (T2–T6)</span>
+          </span>
+        </div>
+        <a class="hover:underline" href="mailto:1997sonbichly@gmail.com">1997sonbichly@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <a href="#home" class="flex items-center gap-3">
+          <div class="grid h-10 w-10 place-items-center rounded-xl bg-slate-900 text-white shadow-soft">
+            <span class="font-semibold">TJB</span>
+          </div>
+          <div class="leading-tight">
+            <div class="text-sm font-semibold tracking-wide">CÔNG TY TNHH TJB</div>
+            <div class="text-xs text-slate-500">TJB COMPANY LIMITED · TJB CO., LTD</div>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-6 md:flex">
+          <a class="text-sm text-slate-700 hover:text-slate-900" href="#about">Giới thiệu</a>
+          <a class="text-sm text-slate-700 hover:text-slate-900" href="#services">Dịch vụ</a>
+          <a class="text-sm text-slate-700 hover:text-slate-900" href="#offerings">Tour & Thực phẩm</a>
+          <a class="text-sm text-slate-700 hover:text-slate-900" href="#why">Lợi thế</a>
+          <a class="text-sm text-slate-700 hover:text-slate-900" href="#contact">Liên hệ</a>
+          <a
+            class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-soft hover:bg-slate-800"
+            href="#contact"
+            >Nhận tư vấn</a
+          >
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button
+          id="menuBtn"
+          class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm hover:bg-slate-50 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          Menu
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white md:hidden">
+        <div class="mx-auto max-w-6xl px-4 py-3">
+          <div class="grid gap-2">
+            <a class="rounded-lg px-3 py-2 text-sm hover:bg-slate-50" href="#about">Giới thiệu</a>
+            <a class="rounded-lg px-3 py-2 text-sm hover:bg-slate-50" href="#services">Dịch vụ</a>
+            <a class="rounded-lg px-3 py-2 text-sm hover:bg-slate-50" href="#offerings">Tour & Thực phẩm</a>
+            <a class="rounded-lg px-3 py-2 text-sm hover:bg-slate-50" href="#why">Lợi thế</a>
+            <a class="rounded-lg px-3 py-2 text-sm hover:bg-slate-50" href="#contact">Liên hệ</a>
+            <a
+              class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-medium text-white hover:bg-slate-800"
+              href="#contact"
+              >Nhận tư vấn</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute -left-20 -top-24 h-80 w-80 rounded-full bg-slate-100"></div>
+        <div class="absolute -right-24 top-20 h-96 w-96 rounded-full bg-slate-100"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-white via-white to-slate-50"></div>
+      </div>
+
+      <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-20">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600 shadow-sm">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span>Tư vấn nhanh · Lịch trình rõ · Sản phẩm chọn lọc</span>
+          </div>
+
+          <h1 class="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+            Du lịch trọn gói & đặc sản chọn lọc
+          </h1>
+
+          <p class="mt-4 max-w-xl text-base leading-relaxed text-slate-600 md:text-lg">
+            <span class="font-medium text-slate-900">CÔNG TY TNHH TJB</span> kết nối trải nghiệm du lịch và hương vị địa phương:
+            tour theo mùa, lịch trình linh hoạt, đặt dịch vụ nhanh; đồng thời cung cấp sản phẩm thực phẩm/đặc sản chất lượng, nguồn gốc rõ ràng.
+          </p>
+
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-soft hover:bg-slate-800"
+            >
+              Liên hệ tư vấn
+            </a>
+            <a
+              href="#services"
+              class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-medium text-slate-800 shadow-sm hover:bg-slate-50"
+            >
+              Xem dịch vụ
+            </a>
+          </div>
+
+          <!-- Quick facts -->
+          <div class="mt-8 grid gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div class="text-xs text-slate-500">Mã số doanh nghiệp</div>
+              <div class="mt-1 font-semibold">0801429986</div>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div class="text-xs text-slate-500">Điểm xuất phát</div>
+              <div class="mt-1 font-semibold">Hải Dương & lân cận</div>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div class="text-xs text-slate-500">Tư vấn nhanh</div>
+              <div class="mt-1 font-semibold">1997sonbichly@gmail.com</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero card -->
+        <div class="relative">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-xs text-slate-500">Thông tin doanh nghiệp</div>
+                <div class="mt-1 text-lg font-semibold">CÔNG TY TNHH TJB</div>
+                <div class="text-sm text-slate-600">TJB COMPANY LIMITED</div>
+              </div>
+              <div class="grid h-12 w-12 place-items-center rounded-2xl bg-slate-900 text-white">
+                <span class="text-sm font-semibold">TJB</span>
+              </div>
+            </div>
+
+            <div class="mt-6 grid gap-4">
+              <div class="rounded-2xl bg-slate-50 p-4">
+                <div class="text-xs text-slate-500">Địa chỉ</div>
+                <div class="mt-1 text-sm font-medium text-slate-800">
+                  Số 65 ngõ 534 Việt Hoà, Phường Việt Hoà, Thành phố Hải Dương, Tỉnh Hải Dương, Việt Nam
+                </div>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl bg-slate-50 p-4">
+                  <div class="text-xs text-slate-500">Email</div>
+                  <a class="mt-1 block truncate text-sm font-semibold text-slate-900 hover:underline" href="mailto:1997sonbichly@gmail.com"
+                    >1997sonbichly@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-4">
+                <div>
+                  <div class="text-xs text-slate-500">Sẵn sàng hỗ trợ</div>
+                  <div class="text-sm font-semibold">Nhận báo giá & tư vấn theo nhu cầu</div>
+                </div>
+                <a
+                  href="#contact"
+                  class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800"
+                >
+                  Gửi yêu cầu
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pointer-events-none absolute -bottom-6 -left-6 hidden h-24 w-24 rounded-3xl bg-slate-900/5 md:block"></div>
+          <div class="pointer-events-none absolute -right-8 -top-8 hidden h-28 w-28 rounded-3xl bg-slate-900/5 md:block"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-16">
+        <div class="grid gap-10 md:grid-cols-2 md:items-start">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Giới thiệu</h2>
+            <p class="mt-4 leading-relaxed text-slate-600">
+              TJB hoạt động trong lĩnh vực <span class="font-medium text-slate-900">du lịch</span> và <span class="font-medium text-slate-900">thực phẩm</span>.
+              Chúng tôi thiết kế hành trình phù hợp ngân sách, đảm bảo trải nghiệm trọn vẹn; đồng thời lựa chọn và phân phối đặc sản/đồ ăn chất lượng,
+              phù hợp làm quà tặng, dùng gia đình hoặc đặt theo số lượng.
+            </p>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 p-5">
+                <div class="text-sm font-semibold">Tầm nhìn</div>
+                <p class="mt-2 text-sm text-slate-600">Trở thành thương hiệu được tin chọn cho hành trình du lịch và sản phẩm đặc sản uy tín.</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 p-5">
+                <div class="text-sm font-semibold">Sứ mệnh</div>
+                <p class="mt-2 text-sm text-slate-600">Mang đến trải nghiệm tốt, dịch vụ rõ ràng và sản phẩm an tâm về chất lượng.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Thông tin pháp lý & liên hệ</h3>
+
+            <dl class="mt-5 grid gap-4">
+              <div class="rounded-2xl bg-white p-4">
+                <dt class="text-xs text-slate-500">Tên doanh nghiệp</dt>
+                <dd class="mt-1 text-sm font-semibold">CÔNG TY TNHH TJB</dd>
+              </div>
+              <div class="rounded-2xl bg-white p-4">
+                <dt class="text-xs text-slate-500">Tên tiếng Anh</dt>
+                <dd class="mt-1 text-sm font-semibold">TJB COMPANY LIMITED</dd>
+              </div>
+              <div class="rounded-2xl bg-white p-4">
+                <dt class="text-xs text-slate-500">Tên viết tắt</dt>
+                <dd class="mt-1 text-sm font-semibold">TJB CO., LTD</dd>
+              </div>
+              <div class="rounded-2xl bg-white p-4">
+                <dt class="text-xs text-slate-500">Mã số doanh nghiệp</dt>
+                <dd class="mt-1 text-sm font-semibold">0801429986</dd>
+              </div>
+            </dl>
+
+            <p class="mt-5 text-xs leading-relaxed text-slate-500">
+              Ghi chú: Trang này không hiển thị thông tin cá nhân nhạy cảm (ví dụ: số giấy tờ, ngày sinh...). Nếu bạn muốn hiển thị thêm
+              dữ liệu nào, hãy cân nhắc yếu tố bảo mật và tuân thủ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-16">
+        <div class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Dịch vụ</h2>
+            <p class="mt-3 max-w-2xl text-slate-600">
+              Tập trung vào hai mảng chính: <span class="font-medium text-slate-900">tư vấn/đặt dịch vụ du lịch</span> và <span class="font-medium text-slate-900">cung cấp thực phẩm/đặc sản</span>.
+            </p>
+          </div>
+          <a
+            class="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-sm hover:bg-slate-100"
+            href="#contact"
+            >Nhận báo giá</a
+          >
+        </div>
+
+        <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-between">
+              <div class="text-sm font-semibold">Tư vấn tour & thiết kế lịch trình</div>
+              <div class="grid h-10 w-10 place-items-center rounded-2xl bg-slate-900 text-white">01</div>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">
+              Gợi ý điểm đến theo mùa, tối ưu chi phí, thời gian và nhu cầu trải nghiệm (gia đình, nhóm bạn, công ty).
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Lịch trình linh hoạt</li>
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Minh bạch hạng mục chi phí</li>
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Tư vấn nhanh theo nhóm khách</li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-between">
+              <div class="text-sm font-semibold">Đặt dịch vụ & điều phối hành trình</div>
+              <div class="grid h-10 w-10 place-items-center rounded-2xl bg-slate-900 text-white">02</div>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">
+              Hỗ trợ đặt xe, khách sạn, vé tham quan và các dịch vụ theo gói; điều phối rõ ràng trước ngày khởi hành.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Xác nhận dịch vụ trước giờ đi</li>
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Hỗ trợ trong hành trình</li>
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Tối ưu tuyến điểm & thời gian</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-between">
+              <div class="text-sm font-semibold">Thực phẩm & quà tặng đặc sản</div>
+              <div class="grid h-10 w-10 place-items-center rounded-2xl bg-slate-900 text-white">03</div>
+            </div>
+            <p class="mt-3 text-sm leading-relaxed text-slate-600">
+              Sản phẩm chọn lọc theo tiêu chí chất lượng và nguồn gốc; đóng gói đẹp, phù hợp làm quà và đặt theo số lượng.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Đặc sản theo mùa</li>
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Đóng gói & vận chuyển an toàn</li>
+              <li class="flex gap-2"><span class="text-emerald-600">•</span>Hóa đơn/chứng từ theo yêu cầu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offerings" class="bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-16">
+        <div class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Tour & Thực phẩm</h2>
+            <p class="mt-3 max-w-2xl text-slate-600">
+              Một vài gợi ý để bạn tham khảo. Khi bạn gửi nhu cầu, TJB sẽ báo giá theo thời gian, số lượng khách và tiêu chuẩn dịch vụ.
+            </p>
+          </div>
+          <a
+            class="rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-sm hover:bg-slate-100"
+            href="#contact"
+            >Nhận tư vấn nhanh</a
+          >
+        </div>
+
+        <div class="mt-8 grid gap-5 lg:grid-cols-2">
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+            <div class="flex items-center justify-between gap-3">
+              <div class="text-sm font-semibold">Tour nổi bật</div>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">Gợi ý</span>
+            </div>
+            <div class="mt-5 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-white p-5 shadow-sm">
+                <div class="text-sm font-semibold">Tour 1 ngày · Trải nghiệm địa phương</div>
+                <p class="mt-2 text-sm text-slate-600">Đi gần, lịch gọn, phù hợp nhóm nhỏ và gia đình.</p>
+              </div>
+              <div class="rounded-2xl bg-white p-5 shadow-sm">
+                <div class="text-sm font-semibold">Tour 2N1Đ · Nghỉ dưỡng</div>
+                <p class="mt-2 text-sm text-slate-600">Khách sạn, xe đưa đón, lịch trình tối ưu theo mùa.</p>
+              </div>
+              <div class="rounded-2xl bg-white p-5 shadow-sm">
+                <div class="text-sm font-semibold">Tour đoàn · Company trip</div>
+                <p class="mt-2 text-sm text-slate-600">Kịch bản chương trình, hoạt động nhóm, hỗ trợ điều phối.</p>
+              </div>
+              <div class="rounded-2xl bg-white p-5 shadow-sm">
+                <div class="text-sm font-semibold">Tour theo yêu cầu</div>
+                <p class="mt-2 text-sm text-slate-600">Thiết kế riêng theo ngân sách, sở thích và thời gian.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+            <div class="flex items-center justify-between gap-3">
+              <div class="text-sm font-semibold">Thực phẩm/đặc sản</div>
+              <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">Chọn lọc</span>
+            </div>
+            <div class="mt-5 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-white p-5 shadow-sm">
+                <div class="text-sm font-semibold">Đặc sản địa phương</div>
+                <p class="mt-2 text-sm text-slate-600">Nguồn gốc rõ ràng, phù hợp làm quà biếu.</p>
+              </div>
+              <div class="rounded-2xl bg-white p-5 shadow-sm">
+                <div class="text-sm font-semibold">Combo quà tặng</div>
+                <p class="mt-2 text-sm text-slate-600">Đóng gói đẹp, tùy chọn theo ngân sách.</p>
+              </div>
+              <div class="rounded-2xl bg-white p-5 shadow-sm">
+                <div class="text-sm font-semibold">Đặt số lượng</div>
+                <p class="mt-2 text-sm text-slate-600">Hỗ trợ đơn sỉ cho công ty/sự kiện.</p>
+              </div>
+              <div class="rounded-2xl bg-white p-5 shadow-sm">
+                <div class="text-sm font-semibold">Giao hàng</div>
+                <p class="mt-2 text-sm text-slate-600">Đóng gói cẩn thận, kiểm tra trước khi gửi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section id="why" class="bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-16">
+        <div class="grid gap-10 lg:grid-cols-3">
+          <div class="lg:col-span-1">
+            <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Lợi thế</h2>
+            <p class="mt-4 text-slate-600">
+              Ưu tiên trải nghiệm khách hàng, lịch trình rõ ràng và chất lượng sản phẩm.
+            </p>
+
+            <div class="mt-6 rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="text-sm font-semibold">Bạn cần tư vấn tour hay đặt thực phẩm?</div>
+              <p class="mt-2 text-sm text-slate-600">
+                Để lại thời gian dự kiến, số lượng khách hoặc loại sản phẩm cần mua. TJB sẽ phản hồi sớm với phương án phù hợp.
+              </p>
+              <a
+                href="#contact"
+                class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-slate-900 px-4 py-3 text-sm font-medium text-white hover:bg-slate-800"
+                >Gửi thông tin</a
+              >
+            </div>
+          </div>
+
+          <div class="lg:col-span-2">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div class="rounded-3xl border border-slate-200 p-6 shadow-sm">
+                <div class="text-sm font-semibold">Lịch trình rõ ràng</div>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                  Thống nhất tuyến điểm, dịch vụ và mốc thời gian; giảm phát sinh và giúp chuyến đi chủ động hơn.
+                </p>
+              </div>
+
+              <div class="rounded-3xl border border-slate-200 p-6 shadow-sm">
+                <div class="text-sm font-semibold">Minh bạch chi phí</div>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                  Báo giá theo hạng mục dịch vụ/sản phẩm và điều kiện áp dụng; hạn chế “chi phí ẩn”.
+                </p>
+              </div>
+
+              <div class="rounded-3xl border border-slate-200 p-6 shadow-sm">
+                <div class="text-sm font-semibold">Hỗ trợ nhanh</div>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                  Xác nhận dịch vụ/đơn hàng nhanh, phản hồi rõ ràng và hỗ trợ khi phát sinh.
+                </p>
+              </div>
+
+              <div class="rounded-3xl border border-slate-200 p-6 shadow-sm">
+                <div class="text-sm font-semibold">Chất lượng ưu tiên</div>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                  Với thực phẩm/đặc sản: ưu tiên nguồn gốc, đóng gói và bảo quản; với tour: trải nghiệm và an toàn.
+                </p>
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-5 grid gap-5 sm:grid-cols-3">
+              <div class="rounded-3xl bg-slate-900 p-6 text-white shadow-soft">
+                <div class="text-xs text-white/70">Trải nghiệm</div>
+                <div class="mt-1 text-2xl font-semibold">Tận hưởng</div>
+                <div class="mt-2 text-sm text-white/80">Lịch trình rõ ràng, dịch vụ được xác nhận trước.</div>
+              </div>
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <div class="text-xs text-slate-500">Sản phẩm</div>
+                <div class="mt-1 text-2xl font-semibold">Chọn lọc</div>
+                <div class="mt-2 text-sm text-slate-600">Nguồn gốc rõ ràng, đóng gói chỉn chu.</div>
+              </div>
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <div class="text-xs text-slate-500">Dịch vụ</div>
+                <div class="mt-1 text-2xl font-semibold">Linh hoạt</div>
+                <div class="mt-2 text-sm text-slate-600">Tùy theo lịch, số lượng khách và nhu cầu đặt hàng.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-slate-200 bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-16">
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Liên hệ</h2>
+            <p class="mt-4 text-slate-600">
+              Gửi thông tin để nhận tư vấn tour/đặt thực phẩm. Form này chạy thuần HTML (không backend). Nếu bạn muốn nhận yêu cầu qua email
+              tự động, có thể tích hợp Formspree/Google Apps Script hoặc backend riêng theo lựa chọn.
+            </p>
+
+            <div class="mt-6 space-y-4">
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <div class="text-xs text-slate-500">Địa chỉ</div>
+                <div class="mt-2 text-sm font-medium text-slate-900">
+                  Số 65 ngõ 534 Việt Hoà, Phường Việt Hoà, Thành phố Hải Dương, Tỉnh Hải Dương, Việt Nam
+                </div>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <div class="text-xs text-slate-500">Email</div>
+                  <a class="mt-2 block truncate text-sm font-semibold text-slate-900 hover:underline" href="mailto:1997sonbichly@gmail.com"
+                    >1997sonbichly@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label class="text-sm font-medium text-slate-700" for="name">Họ và tên</label>
+                <input
+                  id="name"
+                  name="name"
+                  required
+                  class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-slate-900/10 focus:ring-4"
+                  placeholder="Nguyễn Văn A"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="phone">Số điện thoại</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    required
+                    class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-slate-900/10 focus:ring-4"
+                    placeholder="09xx xxx xxx"
+                    inputmode="tel"
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <div>
+                  <label class="text-sm font-medium text-slate-700" for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-slate-900/10 focus:ring-4"
+                    placeholder="email@domain.com"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="text-sm font-medium text-slate-700" for="service">Nhu cầu</label>
+                <select
+                  id="service"
+                  name="service"
+                  class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-slate-900/10 focus:ring-4"
+                >
+                  <option value="Tu van tour">Tư vấn tour</option>
+                  <option value="Dat dich vu">Đặt dịch vụ du lịch</option>
+                  <option value="Dat thuc pham">Đặt thực phẩm/đặc sản</option>
+                  <option value="Dat so luong">Đặt số lượng (quà tặng/sự kiện)</option>
+                  <option value="Khac">Khác</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="text-sm font-medium text-slate-700" for="message">Nội dung</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-slate-900/10 focus:ring-4"
+                  placeholder="Mô tả ngắn yêu cầu của bạn..."
+                ></textarea>
+              </div>
+
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-soft hover:bg-slate-800"
+                >
+                  Gửi yêu cầu
+                </button>
+                <p class="text-xs text-slate-500">
+                  Bằng việc gửi, bạn đồng ý để chúng tôi liên hệ lại qua điện thoại/email.
+                </p>
+              </div>
+
+              <div id="formToast" class="hidden rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
+                Đã ghi nhận yêu cầu. Vui lòng kiểm tra email/điện thoại để nhận phản hồi.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-100">
+      <div class="mx-auto max-w-6xl px-4 py-10">
+        <div class="grid gap-8 md:grid-cols-3">
+          <div>
+            <div class="text-sm font-semibold">CÔNG TY TNHH TJB</div>
+            <div class="mt-2 text-sm text-slate-300">TJB COMPANY LIMITED · TJB CO., LTD</div>
+            <div class="mt-4 text-sm text-slate-300">
+              Mã số doanh nghiệp: <span class="font-medium text-slate-100">0801429986</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold">Liên hệ</div>
+            <ul class="mt-3 space-y-2 text-sm text-slate-300">
+              <li>
+                <span class="text-slate-400">Địa chỉ:</span>
+                Số 65 ngõ 534 Việt Hoà, P. Việt Hoà, TP Hải Dương, Hải Dương
+              </li>
+              <li>
+                <span class="text-slate-400">Email:</span>
+                <a class="hover:underline" href="mailto:1997sonbichly@gmail.com">1997sonbichly@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold">Điều hướng</div>
+            <ul class="mt-3 space-y-2 text-sm text-slate-300">
+              <li><a class="hover:underline" href="#about">Giới thiệu</a></li>
+              <li><a class="hover:underline" href="#services">Dịch vụ</a></li>
+              <li><a class="hover:underline" href="#offerings">Tour & Thực phẩm</a></li>
+              <li><a class="hover:underline" href="#why">Lợi thế</a></li>
+              <li><a class="hover:underline" href="#contact">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 border-t border-white/10 pt-6 text-xs text-slate-400">
+          <div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+            <span>© <span id="year"></span> CÔNG TY TNHH TJB. All rights reserved.</span>
+            <span>Thiết kế landing page: TailwindCSS · 1 file index.html</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Minimal JS (menu + fake submit) -->
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn?.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden", !isHidden);
+        menuBtn.setAttribute("aria-expanded", String(isHidden));
+      });
+
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Demo form submit (no backend)
+      const form = document.getElementById("contactForm");
+      const toast = document.getElementById("formToast");
+
+      form?.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Basic client-side validation
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+
+        if (!name || !phone) return;
+
+        toast.classList.remove("hidden");
+        form.reset();
+
+        // Auto-hide toast
+        setTimeout(() => toast.classList.add("hidden"), 5000);
+      });
+    </script>
+  </body>
+</html>
